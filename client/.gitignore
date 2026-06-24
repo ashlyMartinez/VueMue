@@ -7,16 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-client/node_modules
-client/dist
-client/dist-ssr
+node_modules
+dist
+dist-ssr
 *.local
-
-# Backend (Django)
-server/**/__pycache__/
-server/db.sqlite3
-server/**/*.pyc
-server/env/
 
 # Editor directories and files
 .vscode/*
