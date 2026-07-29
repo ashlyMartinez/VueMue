@@ -9,9 +9,9 @@
 
 
 .galleryPageContainer{
-    margin: 10rem 3rem;
+    margin: 5rem 3rem;
     border: 1px solid black; 
-    height: 500px;
+    height: 600px;
     display: flex;
     flex-wrap:nowrap;
     width:fit-content;
@@ -33,9 +33,9 @@
     display:flex;
     flex-wrap:nowrap;
     overflow-x:scroll;
-    height: 500px;
+    height: 600px;
     width:fit-content;
-    align-items:center;
+    
     border: 1px solid red;
 }
 

@@ -1,53 +1,40 @@
 import { Modal, Row, Col } from 'react-bootstrap';
-import styles from './PaintingModal.module.css';
+// import styles from './PaintingModal.module.css';
+import './PaintinModule.css'
 
-export default function PaintingModal({ show, onHide, painting }) {
+export default function PaintingModal({ show, onHide, painting  }) {
     console.log("PaintingModal rendered with painting:", painting);
     console.log("PaintingModal show prop:", show);
   return (
-    <Modal show={show} onHide={onHide} dialogClassName={styles.customModalDialog} contentClassName={styles.modalContent} centered>
-      <Modal.Header className = {styles.modalHeader} closeButton>
-      </Modal.Header>
-      <Modal.Body className={styles.modalBody}>
-        <Row className={styles.splitPane}>
-          
-         
-          <Col md={5} className={styles.sourceSection}>
-            <div className={styles.sourceCard}>
+    <div className="pop-up-container"
+             role="dialog"
+             aria-modal="true"
+             aria-labelledby="modal-title"
+             style={{zIndex: 10}}
+        >
+            {/*pop-up window*/}
+            <div className="pop-up-window">
+                {/*button to close pop-up window - when user clicks button, selected art state goes to null*/}
+                <button
+                    className="pop-up-button"
+                    onClick={() => onHide()}
+                    aria-label="Close details"
+                >
+                    &times; {/*x symbol for the close of button*/}
+                </button>
+                {/*set img source to the primary url of the selected art, set alt text to the current painting's alt text state*/}
+                <img className="pop-up-img" src={painting.imageURL} alt={painting.alt}/>
 
-              <h5 className={styles.tagLabel}>Zoom in on Painting</h5>
-              <Col md={12} className={styles.sourceImageContainer}>
-                <img src={painting?.paintUrl} alt={painting?.title} className={styles.sourceImage} />
-              </Col>
-              <div className={styles.sourceTag}>{painting?.artistName}</div>
-              <div className={styles.sourceTag}>{painting?.title}</div>
-              
+                {/*information displayed to the user in the 2D pop-up window*/}
+                <div className="pop-up-info-box">
+                    <h1>{painting.title}</h1>
+                    <h2>{painting.people?.[0]?.name || "Unknown Artist"}</h2>
+                    <p><strong>Period: </strong>{painting.period || "Unknown"}</p>
+                    <p><strong>Dated: </strong>{painting.dated || "Unknown"}</p>
+                </div>
 
-              <div className={styles.sourceName}>{painting?.title}</div>
-              <div className={styles.sourceDev}>{painting?.artistName}</div>
-
-              {/* Divider inside the card */}
-              <div style={{ 
-                width: '40px', 
-                height: '2px', 
-                backgroundColor: '#4facfe', 
-                borderRadius: '2px',
-                marginTop: '10px' 
-              }} />
-
+                
             </div>
-          </Col>
-
-          
-          <Col md={5} className={styles.targetSection}>
-            <h5 className="mb-4">About this Painting</h5>
-            <div className={styles.scrollContainer}>
-              
-            </div>
-          </Col>
-
-        </Row>
-      </Modal.Body>
-    </Modal>
+        </div>
   );
 }                 
