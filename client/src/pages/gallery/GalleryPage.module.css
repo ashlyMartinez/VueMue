@@ -1,0 +1,67 @@
+
+*{
+    -ms-overflow-style: none;
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.galleryPageContainer{
+    width: 100vw;
+   height: 100vh;
+    margin: 5rem 1rem;
+    
+    height: 600px;
+    display: flex;
+    flex-wrap:nowrap;
+    width:fit-content;
+    overflow-x:scroll;
+    
+
+}
+.galleryPageContainer::-webkit-scrollbar {
+  display:none;
+}
+
+.galleryPageHeader{
+    padding: 2rem 3rem 1rem;
+    flex-shrink: 0;
+    height: 100px;
+    
+}
+
+.galleryPageHeader, 
+.galleryPageContent {
+    width:100vw;
+}
+
+.galleryPageContent{
+    display:flex;
+    flex-wrap:nowrap;
+    overflow-x:scroll;
+    height: 600px;
+    width:fit-content;
+    
+    
+}
+
+.paintingWrapper{
+    margin: 0 2rem;
+    
+}
+
+.paintingWrapper {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.paintingWrapper:hover {
+  transform: translateY(-8px);
+}

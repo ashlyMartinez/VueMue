@@ -8,6 +8,7 @@ import pond_water from "./assets/sounds/pond_water.ogg"
 import romantic from "./assets/sounds/romantic.wav"
 import Button from "react-bootstrap/Button";
 import { useState } from "react";
+import GalleryPage from "./pages/gallery/GalleryPage.jsx"
 
 function App() {
 
@@ -26,7 +27,10 @@ function App() {
     setIsPlaying(!isPlaying);
   }
   return(
-    <Button onClick={handleClick}>click for ocean sound</Button>
+  <>
+      <Button onClick={handleClick}>click for ocean sound</Button>
+      <GalleryPage   />
+  </>
   )
 }
 
