@@ -1,0 +1,55 @@
+{
+  "data": {
+    "id": 11,
+    "api_model": "artworks",
+    "title": "Self-Portrait",
+    "thumbnail": {
+      "lqip": "data:image/gif;base64,R0lGODlhBAAFAPQAAB8ZFyEaFiUZFS0aFCkcFSofFi8cFiIcGCceGDEaFDYdFS8hFi4hGS4hGysjHTMgFzQjGDUkGzYkG0MuIQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURIOA0hjBFyRBBykMsRIMcQQgAOw==",
+      "width": 6125,
+      "height": 8002,
+      "alt_text": "A work made of oil on canvas."
+    },
+    "date_display": "1878",
+    "artist_display": "Walter Shirlaw (American, 1838\u20131909)",
+    "place_of_origin": "United States",
+    "description": null,
+    "short_description": null,
+    "dimensions_detail": [
+      {
+        "depth": null,
+        "width": 53,
+        "height": 70,
+        "diameter": null,
+        "clarification": null
+      }
+    ],
+    "medium_display": "Oil on canvas",
+    "is_public_domain": true,
+    "is_zoomable": true,
+    "max_zoom_window_size": -1,
+    "colorfulness": 0,
+    "color": {
+      "h": 38,
+      "l": 41,
+      "s": 26,
+      "percentage": 1.4282143749776842e-5,
+      "population": 7
+    },
+    "is_on_view": false,
+    "gallery_title": null,
+    "gallery_id": null,
+    "artwork_type_title": "Painting",
+    "department_title": "Arts of the Americas",
+    "department_id": "PC-3",
+    "artist_title": "Walter Shirlaw",
+    "image_id": "7b7a6f39-1cd8-ea2f-9811-18b0e23edac0",
+    "alt_image_ids": ["3b212d9c-cac1-d846-367d-68ca6cd6c74f"],
+    "sound_ids": [],
+    "video_ids": [],
+    "text_ids": []
+  },
+  "config": {
+    "iiif_url": "https://www.artic.edu/iiif/2",
+    "website_url": "http://www.artic.edu"
+  }
+}
