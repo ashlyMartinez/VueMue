@@ -7,11 +7,11 @@ export default function Painting({ title, img, artistName, date, width, height, 
         <div className={styles.paintingContainer}>
         
             <div className={styles.paintingVisualization}>
-                <figure style={{width: width/2, height: height/2}} className={styles.paintingFigure}>
+                <figure style={{width: width/3+40, height: height/3+40}} className={styles.paintingFigure}>
                     <div className={styles.outerBevel}>
                     <div className={styles.flatSurface}>
                         <div className={styles.innerBevel}>
-                        <img width={width/2} height={height/2} src={img} alt={alt} className={styles.paintingImage} />
+                        <img width={width/3} height={height/3} src={img} alt={alt} className={styles.paintingImage} />
                         </div>
                     </div>
                     </div>
