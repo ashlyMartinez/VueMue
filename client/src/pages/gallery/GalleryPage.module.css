@@ -1,0 +1,45 @@
+
+*{
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.galleryPageContainer{
+    margin: 10rem 3rem;
+    border: 1px solid black; 
+    height: 500px;
+    display: flex;
+    flex-wrap:nowrap;
+    width:fit-content;
+    overflow-x:scroll;
+    
+
+}
+.galleryPageContainer::-webkit-scrollbar {
+  display:none;
+}
+
+
+.galleryPageHeader, 
+.galleryPageContent {
+    width:100vw;
+}
+
+.galleryPageContent{
+    display:flex;
+    flex-wrap:nowrap;
+    overflow-x:scroll;
+    height: 500px;
+    width:fit-content;
+    align-items:center;
+    border: 1px solid red;
+}
+
+.paintingWrapper{
+    margin: 0 10rem;
+    
+}
