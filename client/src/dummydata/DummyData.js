@@ -4,11 +4,11 @@ import sunrise from "../assets/images/impression_sunrise.webp"
 import water_lilies from "../assets/images/water_lilies.jpg"
 import water_lilies_UV from "../assets/images/water_lilies_UV.jpg"
 
-//import frogs_insects_pond from "./assets/sounds/frogs_insects_pond.wav"
-//import man_smoking_cigar from "./assets/sounds/man_smoking_cigar.mp3"
-//import ocean from "./assets/sounds/ocean.wav"
-//import pond_water from "./assets/sounds/pond_water.ogg"
-//import romantic from "./assets/sounds/romantic.wav"
+import frogs_insects_pond from "../assets/sounds/frogs_insects_pond.wav"
+import man_smoking_cigar from "../assets/sounds/man_smoking_cigar.mp3"
+import ocean from "../assets/sounds/ocean.wav"
+import pond_water from "../assets/sounds/pond_water.ogg"
+import romantic from "../assets/sounds/romantic.wav"
 
 
 
@@ -20,7 +20,7 @@ const paintings = [
         "artist": "Claude Monet",
         "date": "1855/56",
         "alt_text": "",
-        //"sound": man_smoking_cigar,
+        "sound": man_smoking_cigar,
         "description": "",
         "width": 843,
         "height": 1320,
@@ -34,7 +34,7 @@ const paintings = [
         "artist": "Claude Monet",
         "date": "1906",
         "alt_text": "",
-       // "sound": pond_water,
+        "sound": pond_water,
         "description": "",
         "width": 843,
         "height": 810,
@@ -48,7 +48,7 @@ const paintings = [
         "artist": "Claude Monet",
         "date": "1866",
         "alt_text": "",
-        //"sound": romantic,
+        "sound": romantic,
         "description": "",
         "width": 750,
         "height": 1105,
@@ -64,7 +64,7 @@ const paintings = [
         "artist": "Claude Monet",
         "date": "1872",
         "alt_text": "",
-        //"sound": ocean,
+        "sound": ocean,
         "description": "",
         "width": 620,
         "height": 477,
@@ -79,7 +79,7 @@ const paintings = [
         "artist": "Claude Monet",
         "date": "1915-1926",
         "alt_text": "",
-        //"sound": frogs_insects_pond,
+        "sound": frogs_insects_pond,
         "description": "",
         "width": 1024,
         "height": 473,

@@ -1,7 +1,10 @@
 import styles from "./Painting.module.css";
+import useSound from "use-sound"
 
-export default function Painting({ title, img, artistName, date, width, height, funFacts, alt }) { 
+
+export default function Painting({ title, img, artistName, date, width, height, funFacts, alt, sound }) { 
     console.log("Painting component rendered with title:", title);
+
 
     return (
         <div className={styles.paintingContainer}>
