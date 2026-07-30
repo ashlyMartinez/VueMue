@@ -28,7 +28,6 @@ function App() {
   }
   return(
   <>
-      <Button onClick={handleClick}>click for ocean sound</Button>
       <GalleryPage   />
   </>
   )
